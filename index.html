@@ -1,37 +1,80 @@
 <!DOCTYPE html>
 <html>
-  <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>replit</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <title> snack-orders</title>
-  </head>
   
-  <body> 
-    <img src="orderlogo.jpg" width=300 >
-    <h1> Orders</h1>
-    <h3> Snack Varieties</h3>
-    <ul>
-      <li> Savoury</li>
-      <li> Sweet</li>
-      <li> Healthy</li>
-    </ul>
-    <h3>Your Orders</h3>
-    <ul>
-      <li>Current Orders</li>
-      <li> Past Orders</li>
-      <li> Order Again</li>
-    </ul>
-    <h3> Contact Us</h3>
-    <ul>
-      <li>Email: snacksareus@blahblahblah</li>
-      <li> Call us: 0800 snacks</li>
-    </ul>
-    <a href="https://WebBuildPractice.mandymason.repl.co">Home</a>
-      
+<head>
 
-    <script src="script.js"></script>
+  <style>
+
+     #drew{
+      color:red;
+      font-family:'Courier New', Courier, monospace;
+      font-weight:1000;
+      background: black;
+       text-align: center;
+    }
+    #bobby{
+      color:green;
+      font-family:'Courier New', Courier, monospace;
+      font-weight:1000;
+      background: black;
+      text-align:center;
+    }
+    .v {
+      color:orange ;
+      font-family:'Courier New', Courier, monospace;
+      font-weight:1000;
+      background: black;
+    }
+    .rich {
+      color:#FFC312 ;
+      font-family:'Courier New', Courier, monospace;
+      
+      background: black;
+      text-align:center;
+    }
+    .sai {
+      color:white ;
+      font-family:'Courier New', Courier, monospace;
+      font-weight:1000;
+      
+    }
+    img{
+      display:center;
+    }
+  </style>
+
+</head>
+
+  <body style="background-color:#ED4C67;border: 10px solid black;">
+
+      <h1 id="drew">harrogate water</h1>
+<img style="border:1px solid black;margin:10px 10px 10px 125px" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxATEBAQDxIQEBUQEBAYEA8PEBUNERAQFRIWFxcSFhYYHighGBolHRUWITEhJSsrLi4uFx8zODMsNygtLisBCgoKDQ0OFQ8PFSsZFRkrKzctLSstListLSstLSs3LTcrNys0Kys3Ny0zLS0tNystNy0tKy0tLTctLSs3KysrN//AABEIAQEAxAMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAAAQMCBAUGBwj/xABJEAACAQIDBAUGCwQHCQAAAAAAAQIDEQQSIQUTMUEGIlFhcRQjMoGhsQckQlJykZTB0eHwk6LC8RUzVGOCktIWNERTYoOyw8T/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAYEQEBAQEBAAAAAAAAAAAAAAAAAREhAv/aAAwDAQACEQMRAD8A+4gAAAAAAAAAAea+EXatXDbOrVaMslS9OMJpJuOaaTav3XPSngvhqqW2ZxsniKeZ68Ms+zvsB8gl0t2lJOTxuL58K84Lh2JnLn0jx7euOx/2yv8A6za/opxpuVSpCCt82pN29Ube04NeVNO0ain3qMor96xVdWHSLHf23HfbK/8ArOhhOl20cy+OYr9vN+y/ccHDYZyV80V4tfibOHwbzLrR4vlL7kRX6m2Hi3VwuHrPV1aFKbfDWUE37WbxxehSa2dg0+McPTT9UbfcdoMgAAAAAAAAAAAAAAAAAAAAAAAB474UdnxxOCeFcq0JTmpRdHC1MW+rfTqtKPpcZSR7EwqzSjJvRJNt9iSA/PtXZiqUslSpu7RyuUVCr1klfRTWvd3nDl0Owi9LF1vVh4L31D7BsTCdR9Z3u36bWnLmY4vAO7vUq+Ma817mZvofMMPsDBxiksVVdv7qC/jM6Gw4urCNKVWonJXUacZ1Gr65YqWr7rn1Chgo29Oo/GrN/eRTwUKdalVvO0atNtucpJJSV3Zsmr16zo0lHDU6aVVbqKj56k6Enbnlf3XOoEwbQAAAAAAAAAAAAAAAAAAAAAAAAPN9Jt7Vao0/RVs9pOGeXzW0tIrj/LTs7Sxe6puXN6RXecfBV5N+he7fWzcF9WoGpgNkuCllTu/lOV7Xu3lT9hp7U2fPSKUklfVVGp25at39p6iVZpaQbtyXM81tHalVNvyerL6Kf4EFNLBVJKF01a+qm31rWWZaXXHT79TKexpTzZoRba9FzcoS07baPvt+WGD2pWb1w1Ra6p6HfoYib407dzdgJ6NTnCKo1L2X9U5O8klxpt87cnzR3jz1evLjlSt2PW/adnA4jeQUuD4SXZJcSjYAAAAAAAAAAAAAAAAAAAAAACrE1lCEpv5KbA81t/EudZU48Iad2bmdHCU0oq3YjhYBOUs3HM283bqeipR0Atb0OZVWvcbteWljSkwRjCCNunwNaJs0WRaitSujDY1Zxm4PhP2SX69xstXRz8SrSTXJrXwCPSArw9VSjGS5r2lhQAAAAAAAAAAAAAAAAAAA5XSOp5pQ/wCZJL1WdzqnB6RVPOUI97fq5t/UgKNmwXJWS0S7F2HTRo7OWl+1u3I3gNesa7RdVKiLCJdTKoougBdGRq4yF032GzFGGIjoVF2wqt6Vvmtr9e06Rw9gyeecXp1btd6f5ncAAAAAAAAAAAAAAAAAAAAee21Lzz/6aS97/E9Ced2nG+Im7XtBJ+uKAvwcbRXgbDKMKuqvBF0gNeSK7FrMJAIosiiuKLYgZQZlVRiiKz0A19mPLie6cX+P3HoDy+BfxqF+eb3Kx6gAAAAAAAAAAAAAAAAAAAB5vab89V8IP1K34HpDze1dK1X6C/8AGN/eBtUJaJ9xbJ6GrhZaJmw5aAVMrZbcwnK4ERZdEqhItiwCRNRaE5u4mfADl0H8ZpfSX1X/AF9Z6o8lCpBYqjmlGLc7KLkk221wT4nrQAAAAAAAAAAAAAAAAAAAHx74Wq+7xsZWknKlG04VZ0ZK3LzUoSlx4OVu4+wnxn4aX8aorSyp+PG3Fer2vsA50duVoZVGvjEkldqq3D172VRl+J6V4uLSjiaiXNSVKo3rbh5K+x8zhTU7qdpei5U7RuskG05acUssrvllfZcxhjs0m506MnJQSjulGMUnJXUeTfd83usqOxPpti1xxcvs0JaerDmtPp7i9fjctOzCRX/p1ORi8ZT6ydClrHK7NwlF66wtwave+v4c+njqSln3FGSkrOF81NzdbNdJ3drWgo3btZXYHp49O8Y+GKf7CnH/AOdlq6W45/8AF1f+3uFyv8rBo8vDGR60ZUKKtDLZxV1K+ZybSTbd+7gvA6MKkoxV6NJKpdp1KXpRvJ9R6aLPa6u9I62StFdh9JcS/SxWMlx1VWnFaJv5Cp9jM3i6k1ec6tVdk8RiEuzg60k/qNHZ2/m1TpRlOWRWyUnVlkisl0nfss524rjokupicDW69SpFpqVqjk6dKWayaiotpyeWUbpJtX9YG50TkljMOowhHNWim1GMZeGaEY38Hc+ynxjow15bhbcq0Pej7OCgACAAAAAAAAAAAAAAAAB8Z+GqC8qpd9KN+fynbT6z7MfH/hsgt9RldX3aTWt2rvXw5etFg4ODxtLcQjKNPP5Fj1vXUnGcJS8ocaajmyvNdWur9fTkdajh6KqYCNKpTnLBYzBwmoJxtGdennk5NWnFV89nFvSuuSR47C07xT18b211195u0aMbTztaU5uF7tZ+XDjfVdmvP0WHdrYi7pVI1MVKC2ftH465bzFKSoznKm3mVp0rXinP5d00mrc/HZ99iJYdylXnhML5HiFbf4ymm99Xp83WcbQsuulTmuKZz9pYfB5akqbmmp1VBTUVenGjJwfDnWUYpcbSt4adTA4TPNRqKUX8qco0cq3lVObuuu4qNDRavO2lo4IrsYObh5G9pNqpHFScfLMzq08LunldbN1t1vsjWfkqluqbNbBYh0JrFVMTvZ1qW7jWxEJ0K9SU4xvHjeynOWaPVSS14HmNnUaDptzqSp1bySg4Xg5vRSk0tFecL8XalPnJHWpU8JF2i1KLdVqc1WjK26W7jNRt8tz4LlF83eD0GIqYVyobutTl5JWpRhnjur4dZU5JyfnGqkZVL8t/J8EWVasNxVipUb+U1ZK6k6koyVKzpuMWlfI7ttcFqeflus0NynFbuObNmvvOtd2le2iXDt5XsbqeltO+z15fVxA6vRKN8dhufnb/AFH2U+OdDf8AfaPdJdmnWS5+PI+xgoAAgAAAAAAAAAAAAAAAAfHvhtj5+g/7rjz0lL8fafYT5Z8MGElOrSapVqqVLXcRVSoutLSMM0b8vneGoHz3BQThG643974Gw3dcW/HT9fmTSpQjTiqkpUeSVelVUnrzzU4KL9ZY8jX9ZT8ZVaEI+yq37OfhajkucYyTksyTvKDs1JdmvBPVe4x8pi5Raw9NqFSMnGnC90tcksyklFqE+Fna+qs73Twqd8tbDS+jiFN/upla2fVSnFSp2mrSVqjTVpJa7vTSUlp2vuAqwtTLo6cbpqznBcpKdpKSu9GlbTSXg1fRWiS0tGK0XzYpXv2u13zbk2ZSw9STvVq0Hq3mlUVJtuMU23lXKEV/hRbGnBcauHl3QxFGT/enH3kVfglqradtrcefq0X5HU5WXvt+a538fr5uDnST1rQj3ebqt/saku7kdqlhZz9ClianY6FCrNPvanTgl/mA2+hz+PYflaouOmv6sfZz5P0W2dWhiqMqlHdLeRvKpOLnLXlBSm4/5+b0PrAKAAIAAAAAAAAAAAAAABFwJPG9MKUvKKbSb83rbW2sj2Nzhbfpp1aLaupKSfqs/vA5+Al1F4F08DSl6dKlP6VOMveivCqyt2aG5EDlVujmBfpYTBvxwtJ/wmp/sjs7+xYP7NS/A9DJGCiBxafRTZy4YLBfZKL/AITo0dj4WPoYfDx+jQpx9yN2NMt3YGOFpqPopR+ilH3Fld6E04mNfgB5zE1WsVh121oe892eF3ObG4a3Kpd+EU39x7i4GQIuLgSCLi4Egi4uBIIuAIuDG4uBkLmNwBkRcwuQ2BY2c7bVO9PN8ySfqej99/UblzGaTTT1TTTXanxQHmoy630tfXzN6lI0sZQcW4vlwb5rt9xNTHxi5N3avpa3Phx/WgHTQOLU2xP5EO6/pWfsV+4ow+2KkYVHUTbUuq9LJq11ZfX94TXoJzt62kixSPDTxTi7zqTqa6JVHf23XsN7CbXqRSyyclzjV6zX+JA16xTNfFVdDnUNpdVSne8uMYrhq7ce6xVjcVddXVv0VZ8Qrc2BRzVp1eUItL6UnZ+xM9Jc5uy8Nu6UY8+MvE3EBdcm5SSBbcXK0TYDMkwsSBkDGwAmxFjOwsBhYGVhYDCxi0W2IsBVYhotsVYhdW3aBza1JTbb58OVkUS2fF24WXJq6OioGSgBx8fsp1GrTyWjbLFWVvf/ACNfD7CUL2tra9+bXM9FkGQGPKV+jKk7pqPcldF+D2Dkzap5rXvHkuR6TIQ4BMjkf0e73ur6a2XILZ9u7uR1spi4hU4RdXXijYUSiho/E27AYKJlYmxNgMSSbE2AxsSkZWFgIsDIAAAAAAAixIAixTXXD1l5VV4oClIySJSMgMLE2MiQMMpFiwgDCxi0WGLQFaWqNsoSNiwEWJsSAIsSAAAAAAAAAAAAAAACqqWldXkBgiQAFhYkARYWJAEENEkMCEbBRYvAAAAAAAAAAAAAAAAAAAAYVDMxmBWTYkmwGJJNhYDEGVgBiLE2AEWLSssAAAAAAAAAAAAAAAAAAAARIADEkgAAAAAAEsgACEWAAAAAAAAAAAAB/9k="/>
+<br/>
+    
+<a class="rich" href="https://www.sainsburys.co.uk/gol-ui/product/still-water/harrogate-still-spring-water-750ml" > Buy Now,</a>
+    
+<p class="sai"><marquee>Harrogate's motto 'arx celebris fontibus'</marquee></p>
+<h2 id="bobby"> Analysis </h2>
+
+<table class="v">
+  <tr>
+    <th style= "font-size:30px"> composition</th>
+    <th style="font-size:30px">Qty</th>
+  </tr>
+  <tr>
+    <td>calcium</td>
+    <td>45</td>
+  </tr>
+  <tr>
+    <td>Magnesium</td>
+    <td>14</td>
+  </tr>
+</table>
+    
   </body>
+
+
+
+
 </html>
